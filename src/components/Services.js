@@ -11,17 +11,17 @@ export default function Services() {
         <div className="text-gray-500">What I Offer</div>
       </div>
       <div className="flex  gap-[50px] justify-between px-[80px] mt-[30px] ">
-        <div className="flex flex-col w-[150px] bg-pink-500 gap-[20px] shadow-2xl">
+        <div className="flex flex-col w-[150px] bg-gray-200 gap-[20px] shadow-2xl items-center justify-between ">
           <div className="icon"><BsBoxSeam/></div>
           <div className="title">Product Design</div>
           <div className="text-gray-700">View More</div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col w-[150px] bg-gray-200 gap-[20px] shadow-2xl items-center justify-between">
           <div className="icon"><BsCodeSlash/></div>
-          <div className="title">Product Design</div>
+          <div className="title">UI/UX Design</div>
           <div className="text-gray-700">View More</div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col w-[150px] bg-gray-200 gap-[20px] shadow-2xl items-center justify-between">
           <div className="icon"><BsBoxSeam/></div>
           <div className="title">Product Design</div>
           <div className="text-gray-700">View More</div>
