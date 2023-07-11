@@ -9,7 +9,7 @@ import eliza from '../assets/IMG_6234.jpg'
 
 export default function Home() {
   return (
-   <div className=' flex justify-between px-[100px] py-[60px]  '>
+   <div className=' flex justify-between px-[100px] py-[60px] mt-[80px]  '>
       <div className=" flex flex-col justify-center gap-[20px] text-[25px]">
         <div className="insta"><BsInstagram/></div>
        <div className="l"><AiFillLinkedin/></div>

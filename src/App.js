@@ -8,6 +8,7 @@ import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
 import Navbar from './components/Navbar';
 import Services from './components/Services';
+import Resume from './components/Resume';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <Navbar/>
     <Home/>
     <About/>
+    <Resume/>
     <Skills/>
     <Services/>
     </>
