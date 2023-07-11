@@ -20,7 +20,7 @@ const Resume = () => {
      </div>
      
       {/* For education */}
-     <div className='flex gap-[30px]'>
+     <div className='flex gap-[20px]'>
       <div></div>
       <div></div>
       <div></div>
