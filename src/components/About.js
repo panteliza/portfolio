@@ -24,7 +24,7 @@ export default function About() {
             <div className=' w-[200px] h-[200px] gap-[20px] flex flex-col items-center px-[15px] py-[15px] shadow-2xl'>
               <div className="text-[30px]"><BsBagCheck/></div>
               <div className="text-bold text-black text-[30px]">Completed</div>
-              <div className="text-[15px] font-semibold text-gray-700">15 + Projects</div>
+              <div className="text-[15px] font-semibold text-gray-700">20 + Projects</div>
             </div>
             <div className=' w-[200px] h-[200px] gap-[20px] flex flex-col items-center px-[15px] py-[15px] shadow-2xl'>
               <div className="text-[30px]"><BsHeadphones/></div>

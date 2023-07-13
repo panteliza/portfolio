@@ -2,7 +2,7 @@ import React from 'react'
 import { BsBoxSeam } from 'react-icons/bs';
 import {BsCodeSlash } from 'react-icons/bs';
 
-
+// projects section
 export default function Services() {
   return (
     <div className='mt-[50px]' >
