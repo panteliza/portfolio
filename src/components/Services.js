@@ -14,7 +14,7 @@ export default function Services() {
         <div className="flex flex-col w-[150px] bg-gray-200 gap-[20px] shadow-2xl items-center justify-between ">
           <div className="icon"><BsBoxSeam/></div>
           <div className="title">Product Design</div>
-          <div className="text-gray-700">View Mor==e</div>
+          <div className="text-gray-700">View More</div>
         </div>
         <div className="flex flex-col w-[150px] bg-gray-200 gap-[20px] shadow-2xl items-center justify-between">
           <div className="icon"><BsCodeSlash/></div>
