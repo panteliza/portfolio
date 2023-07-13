@@ -36,7 +36,7 @@ export default function About() {
           <div className=" mt-[3px]  "><button className='bg-slate-800 text-white
            px-[9px] py-[3px] flex gap-[3px] items-center rounded-md'>
           <div >
-            Download cv
+            Download CV
             </div>
             <div><HiOutlineDocumentText/></div>
             </button>
