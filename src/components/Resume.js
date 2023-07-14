@@ -97,7 +97,7 @@ const Resume = () => {
         <div className=''>Intelzy </div>
       </div>
       <div className='flex flex-col gap-1 absolute bottom-[200px] w-[390px] right-[-50px]'> 
-        <div className='text-pink-500 font-semibold text-[20px]'>2022-2023</div>
+        <div className='text-pink-500 font-semibold text-[20px]'>2023-Present</div>
         <div className="font-bold">Frontend Developer</div>
         <div className=''>Intelzy</div>
       </div>
