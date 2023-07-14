@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter , Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Home from './components/Home';
 import About from './components/About';
@@ -8,19 +8,19 @@ import Services from './components/Services';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 
-const AppRouter = () => {
+const App = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
-        <Route index path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/skills" component={Skills} />
-        <Route path="/services" component={Services} />
-        <Route path="/resume" component={Resume} />
-        <Route path="/contact" component={Contact} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 };
 
-export default AppRouter;
+export default App;

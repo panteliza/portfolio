@@ -5,10 +5,13 @@ import {FiGithub} from 'react-icons/fi';
 import {IoMdHand} from 'react-icons/io';
 import {CiPaperplane} from 'react-icons/ci';
 import eliza from '../assets/IMG_6234.jpg'
+import Navbar from './Navbar';
 
 
 export default function Home() {
   return (
+    <>
+    <Navbar/>
    <div className=' flex justify-between px-[100px] py-[60px] mt-[80px]  '>
       <div className=" flex flex-col justify-center gap-[20px] text-[25px]">
         <div className="insta"><BsInstagram/></div>
@@ -58,6 +61,6 @@ export default function Home() {
 
     
       </div>
-    
+      </>
   )
 }
