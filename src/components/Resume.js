@@ -28,7 +28,7 @@ const Resume = () => {
      <div className="font-bold text-gray-800 text-[40px]  ">Qualification</div>
      <div className="text-gray-500">My personal journey</div>
 
-     <div className='flex gap-10 mt-[60px]'>
+     <div className='flex gap-10 mt-[10px]'>
      <div className={`flex gap-2  justify-center items-center cursor-default ${isEducationClicked ? 'text-pink-500' : 'inherit'} `}   onClick={handleEducationClick}>
         <FaGraduationCap className='text-[25px]'/>
         <div className='text-[20px] font-semibold' 
@@ -42,22 +42,13 @@ const Resume = () => {
       
      </div>
      
-      {/* For education */}
-     {/* <div className='flex gap-[20px]'>
-      <div className='relative'>
-        <img src={abc} className='w-[120px] h-[500px] mt-[40px]'/>
-        <div className='text-white text-[30px] absolute top-[88px] left-[45px]'><FaReact/></div>
-        <div className='text-white text-[30px] absolute top-[280px] left-[45px]'><SiTailwindcss/></div>
-        <div className='text-white text-[30px] absolute top-[470px] left-[45px]'><FiCode/></div>
-      </div>
-     
-     </div> */}
+      
 
 
      {/* for experience */}
      {isEducationClicked && (
-     <div className='flex gap-[20px]'>
-      <div className='relative'>
+     <div className='flex gap-[20px] relative'>
+      
         <img src={abc} className='w-[120px] h-[500px] mt-[40px]'/>
         <div className='text-white text-[30px] absolute top-[88px] left-[45px]'><FaReact/></div>
         <div className='text-white text-[30px] absolute top-[280px] left-[45px]'><SiTailwindcss/></div>
@@ -72,20 +63,20 @@ const Resume = () => {
         <div className="font-bold">High School Science Stream</div>
         <div className=''>SOS Hermann Gmeiner School Bharatpur</div>
       </div>
-      <div className='flex flex-col gap-1 absolute bottom-[-5px]  w-[390px] right-[120px]'> 
+      <div className='flex flex-col gap-1 absolute bottom-[-1px]  w-[390px] right-[120px]'> 
         <div className='text-pink-500 font-semibold text-[20px]'>2007-2015</div>
         <div className="font-bold">Schooling</div>
         <div className=''>Little Flower School, Chitwan</div>
       </div>
-     </div>
+     
      </div>
    ) }
 
 
 
 {isExperienceClicked && (
-     <div className='flex gap-[20px]'>
-      <div className='relative'>
+     <div className='flex gap-[20px] relative'>
+      
         <img src={abc} className='w-[120px] h-[500px] mt-[40px]'/>
         <div className='text-white text-[30px] absolute top-[88px] left-[45px]'><SiFramer/></div>
         <div className='text-white text-[30px] absolute top-[280px] left-[45px]'><IoLogoNodejs/></div>
@@ -106,7 +97,7 @@ const Resume = () => {
         <div className="font-bold">Frontend Developer</div>
         <div className=''>Intelzy</div>
       </div>
-     </div>
+     
      </div>
    ) }
     </div>
