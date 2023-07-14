@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 
 const App = () => {
   return (
+    // will update tomorrow
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
