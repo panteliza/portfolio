@@ -4,6 +4,9 @@ import {BiBriefcaseAlt2  } from 'react-icons/bi';
 import {FaReact  } from 'react-icons/fa';
 import {SiTailwindcss  } from 'react-icons/si';
 import {FiCode  } from 'react-icons/fi';
+import {SiFramer  } from 'react-icons/si';
+import {IoLogoNodejs  } from 'react-icons/io';
+import {SiMongodb  } from 'react-icons/si';
 
 import abc from '../assets/Asset 4.png'
 const Resume = () => {
@@ -59,10 +62,53 @@ const Resume = () => {
         <div className='text-white text-[30px] absolute top-[88px] left-[45px]'><FaReact/></div>
         <div className='text-white text-[30px] absolute top-[280px] left-[45px]'><SiTailwindcss/></div>
         <div className='text-white text-[30px] absolute top-[470px] left-[45px]'><FiCode/></div>
+      <div className='flex flex-col gap-1 absolute bottom-[350px] w-[390px] right-[120px]'> 
+        <div className='text-pink-500 font-semibold text-[20px]'>2018-present</div>
+        <div className="font-bold">Bachelor of Science in Computer Science and Information Technology</div>
+        <div className=''>Tribhuvan University, Institute of Science and Technology</div>
       </div>
+      <div className='flex flex-col gap-1 absolute bottom-[200px] w-[390px] left-[180px]'> 
+        <div className='text-pink-500 font-semibold text-[20px]'>2015-2017</div>
+        <div className="font-bold">High School Science Stream</div>
+        <div className=''>SOS Hermann Gmeiner School Bharatpur</div>
+      </div>
+      <div className='flex flex-col gap-1 absolute bottom-[-5px]  w-[390px] right-[120px]'> 
+        <div className='text-pink-500 font-semibold text-[20px]'>2007-2015</div>
+        <div className="font-bold">Schooling</div>
+        <div className=''>Little Flower School, Chitwan</div>
+      </div>
+     </div>
      </div>
    ) }
 
+
+
+{isExperienceClicked && (
+     <div className='flex gap-[20px]'>
+      <div className='relative'>
+        <img src={abc} className='w-[120px] h-[500px] mt-[40px]'/>
+        <div className='text-white text-[30px] absolute top-[88px] left-[45px]'><SiFramer/></div>
+        <div className='text-white text-[30px] absolute top-[280px] left-[45px]'><IoLogoNodejs/></div>
+        <div className='text-white text-[30px] absolute top-[470px] left-[45px]'><SiMongodb/></div>
+      <div className='flex flex-col gap-1 absolute bottom-[400px] w-[390px] left-[180px]'> 
+        <div className='text-pink-500 font-semibold text-[20px]'>2023-Present
+        </div>
+        <div className="font-bold">Frontend Developer</div>
+        <div className=''>Intelzy </div>
+      </div>
+      <div className='flex flex-col gap-1 absolute bottom-[200px] w-[390px] right-[-50px]'> 
+        <div className='text-pink-500 font-semibold text-[20px]'>2022-2023</div>
+        <div className="font-bold">Frontend Developer</div>
+        <div className=''>Intelzy</div>
+      </div>
+      <div className='flex flex-col gap-1 absolute bottom-[10px]  w-[390px] left-[180px]'> 
+        <div className='text-pink-500 font-semibold text-[20px]'>2023-present</div>
+        <div className="font-bold">Frontend Developer</div>
+        <div className=''>Intelzy</div>
+      </div>
+     </div>
+     </div>
+   ) }
     </div>
   )
 }
