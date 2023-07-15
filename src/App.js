@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    // will update tomorrow
+    
    <>
    <Home/>
    <About/>
