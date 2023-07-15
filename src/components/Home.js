@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <>
     <Navbar/>
-   <div className=' flex justify-between px-[100px] py-[60px] mt-[80px]  '>
-      <div className=" flex flex-col justify-center gap-[20px] text-[25px]">
+   <div className=' flex justify-between px-[80px]  mt-[70px]  '>
+      <div className=" flex flex-col justify-center gap-[20px] text-[25px] text-pink-500">
         <div className="insta"><BsInstagram/></div>
        <div className="l"><AiFillLinkedin/></div>
        <div className="g"><FiGithub/></div>
@@ -22,10 +22,10 @@ export default function Home() {
       
       <div className="flex flex-col  items-start gap-[15px]  pt-[10px] h-[400px]">
       <div className="text-[70px] font-semibold flex flex-col items-start">
-        <div className='text-gray-800'>Eliza</div> 
+        <div className='text-[#212B36]'>Eliza</div> 
         <div className='flex gap-[3px]  items-center '>
-          <div className='text-gray-800'>Pant</div> 
-          <div  className="text-yellow-400"><IoMdHand/></div>
+          <div className='text-[#212B36]'>Pant</div> 
+          
       </div>
       </div>
 

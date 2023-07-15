@@ -8,7 +8,7 @@ import {HiOutlineDocumentText} from 'react-icons/hi';
 export default function About() {
   return (
     <div>
-      <div className="flex flex-col text-center mt-7">
+      <div className="flex flex-col text-center mt-[100px]">
         <div className="font-bold text-gray-800 text-[40px]">About Me</div>
         <div className="text-gray-500">My introduction</div>
       </div>

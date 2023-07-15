@@ -24,11 +24,11 @@ const Resume = () => {
 
   return (
     <div className='flex flex-col items-center
-    justify-center m-[50px]'>
+    justify-center mt-[150px]'>
      <div className="font-bold text-gray-800 text-[40px]  ">Qualification</div>
      <div className="text-gray-500">My personal journey</div>
 
-     <div className='flex gap-10 mt-[10px]'>
+     <div className='flex gap-10 mt-[30px]'>
      <div className={`flex gap-2  justify-center items-center cursor-default ${isEducationClicked ? 'text-pink-500' : 'inherit'} `}   onClick={handleEducationClick}>
         <FaGraduationCap className='text-[25px]'/>
         <div className='text-[20px] font-semibold' 
