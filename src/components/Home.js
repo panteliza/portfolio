@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
     <Navbar/>
-   <div className=' flex justify-between px-[80px]  mt-[70px]  '>
+   <div className=' flex justify-between px-[80px]  mt-[70px]   ' id="home">
       <div className=" flex flex-col justify-center gap-[20px] text-[25px] text-pink-500">
         <div className="insta"><BsInstagram/></div>
        <div className="l"><AiFillLinkedin/></div>

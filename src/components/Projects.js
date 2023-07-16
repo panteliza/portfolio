@@ -2,10 +2,10 @@ import React from 'react'
 
 export default function Projects() {
   return (
-   <div className='flex flex-col gap-2 justify-center items-center mt-[150px]'>
+   <div className='flex flex-col gap-2 justify-center items-center mt-[100px] ' id='projects'>
     <div className='font-bold text-gray-800 text-[40px]'>Projects</div>
     <div className="text-gray-500">Highlights of my Work</div>
-      <div className='flex  '>
+      <div className='flex z-[-10] '>
       
         <div className='grid grid-cols-3 justify-evenly gap-5 items-center  pt-[20px]  '>
         <div className='w-[420px] h-[280px] rounded-xl relative group'>

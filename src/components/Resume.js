@@ -24,7 +24,7 @@ const Resume = () => {
 
   return (
     <div className='flex flex-col items-center
-    justify-center mt-[150px]'>
+    justify-center mt-[150px]' id='resume'>
      <div className="font-bold text-gray-800 text-[40px]  ">Qualification</div>
      <div className="text-gray-500">My personal journey</div>
 
@@ -47,7 +47,7 @@ const Resume = () => {
 
      {/* for experience */}
      {isEducationClicked && (
-     <div className='flex gap-[20px] relative'>
+     <div className='flex gap-[20px] relative  z-[-10]'>
       
         <img src={abc} className='w-[120px] h-[500px] mt-[40px]'/>
         <div className='text-white text-[30px] absolute top-[88px] left-[45px]'><FaReact/></div>

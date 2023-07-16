@@ -13,7 +13,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="container mx-auto mt-[150px]  flex flex-col  justify-center items-center">
+    <div className="container mx-auto mt-[150px]  flex flex-col  justify-center items-center"  id='contact'>
       <h2 className="font-bold text-gray-800 text-[40px]">Get in Touch</h2>
       <div className='text-gray-500'> Contact me</div>
       <form onSubmit={handleSubmit}>
