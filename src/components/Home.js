@@ -2,17 +2,18 @@ import React from 'react'
 import {BsInstagram} from 'react-icons/bs';
 import {AiFillLinkedin} from 'react-icons/ai';
 import {FiGithub} from 'react-icons/fi';
-import {IoMdHand} from 'react-icons/io';
+
 import {CiPaperplane} from 'react-icons/ci';
 import eliza from '../assets/IMG_6234.jpg'
-import Navbar from './Navbar';
+import Layout from './Layout'; 
 
 
 export default function Home() {
   return (
-    <>
-    <Navbar/>
-   <div className=' flex justify-between px-[80px]  mt-[70px]   ' id="home">
+    <Layout>
+    <div id='home'>
+   
+   <div className=' flex justify-between px-[80px]  mt-[70px]   ' >
       <div className=" flex flex-col justify-center gap-[20px] text-[25px] text-pink-500">
         <div className="insta"><BsInstagram/></div>
        <div className="l"><AiFillLinkedin/></div>
@@ -61,6 +62,7 @@ export default function Home() {
 
     
       </div>
-      </>
+      </div>
+      </Layout>
   )
 }

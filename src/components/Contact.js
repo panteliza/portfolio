@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Navbar from './Navbar';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -7,13 +8,13 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your form submission logic here
-    // Example: Send form data to a server or display a success message
+  
     console.log('Form submitted');
   };
 
   return (
     <div className="container mx-auto mt-[150px]  flex flex-col  justify-center items-center"  id='contact'>
+
       <h2 className="font-bold text-gray-800 text-[40px]">Get in Touch</h2>
       <div className='text-gray-500'> Contact me</div>
       <form onSubmit={handleSubmit}>

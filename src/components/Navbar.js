@@ -1,11 +1,11 @@
 import React from 'react';
 import { BiHome } from 'react-icons/bi';
 import { GoPerson } from 'react-icons/go';
-import { HiDocument } from 'react-icons/hi';
+
 import { MdHomeRepairService } from 'react-icons/md';
 import { MdOutlinePhotoFilter } from 'react-icons/md';
 import { CiPaperplane } from 'react-icons/ci';
-import { Link } from 'react-router-dom';
+
 
 export default function Navbar() {
   return (

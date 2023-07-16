@@ -4,9 +4,11 @@ import {HiOutlineBadgeCheck} from 'react-icons/hi';
 import {BsHeadphones} from 'react-icons/bs';
 import {BsBagCheck} from 'react-icons/bs';
 import {HiOutlineDocumentText} from 'react-icons/hi';
+import Layout from './Layout';
 
 export default function About() {
   return (
+   
     <div id="about">
       <div className="flex flex-col text-center mt-[100px]">
         <div className="font-bold text-gray-800 text-[40px]">About Me</div>
@@ -44,5 +46,6 @@ export default function About() {
         </div>
       </div>
     </div>
+    
   )
 }
