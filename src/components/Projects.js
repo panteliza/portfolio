@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Projects() {
   return (
-   <div className='flex flex-col gap-2 justify-center items-center mt-[100px] ' id='projects'>
+   <div className='flex flex-col gap-2 justify-center items-center pt-[80px] ' id='projects'>
     <div className='font-bold text-gray-800 text-[40px]'>Projects</div>
     <div className="text-gray-500">Highlights of my Work</div>
       <div className='flex z-[-10] '>

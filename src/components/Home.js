@@ -5,15 +5,17 @@ import {FiGithub} from 'react-icons/fi';
 
 import {CiPaperplane} from 'react-icons/ci';
 import eliza from '../assets/IMG_6234.jpg'
-import Layout from './Layout'; 
+
 
 
 export default function Home() {
   return (
-    <Layout>
-    <div id='home'>
+    <>
    
-   <div className=' flex justify-between px-[80px]  mt-[70px]   ' >
+
+    <div id='home'  > 
+   
+   <div className=' flex justify-between px-[80px]  pt-[200px]  ' >
       <div className=" flex flex-col justify-center gap-[20px] text-[25px] text-pink-500">
         <div className="insta"><BsInstagram/></div>
        <div className="l"><AiFillLinkedin/></div>
@@ -35,7 +37,7 @@ export default function Home() {
       
       
       <div className="flex gap-5 items-center ">
-        <div className="h-[2px] w-[80px] bg-black"></div>
+        <div className="h-[2px] w-[80px] bg-pink-500"></div>
       <div className="pt-30px">Software Engineer</div>
       </div>
 
@@ -63,6 +65,7 @@ export default function Home() {
     
       </div>
       </div>
-      </Layout>
+      </>
   )
 }
+ 

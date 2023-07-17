@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar';
+
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -13,26 +13,26 @@ const Contact = () => {
   };
 
   return (
-    <div className="container mx-auto mt-[150px]  flex flex-col  justify-center items-center"  id='contact'>
+    <div className="container mx-auto pt-[100px]  flex flex-col  justify-center items-center"  id='contact'>
 
       <h2 className="font-bold text-gray-800 text-[40px]">Get in Touch</h2>
       <div className='text-gray-500'> Contact me</div>
       <form onSubmit={handleSubmit}>
-        <div className="flex flex-col mb-4">
-          <label htmlFor="name" className="text-lg font-medium mb-2">
+        <div className="flex flex-col mb-4 ">
+          <label htmlFor="name" className="text-lg font-medium mb-2 text-pink-500">
             Name
-          </label>
+          </label> 
           <input
             type="text"
             id="name"
-            className="border border-gray-300 rounded-lg py-2 px-3"
+            className="border border-gray-300 rounded-lg py-2 px-[160px]"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
           />
         </div>
         <div className="flex flex-col mb-4">
-          <label htmlFor="email" className="text-lg font-medium mb-2">
+          <label htmlFor="email" className="text-lg font-medium mb-2 text-pink-500">
             Email
           </label>
           <input
@@ -45,7 +45,7 @@ const Contact = () => {
           />
         </div>
         <div className="flex flex-col mb-4">
-          <label htmlFor="message" className="text-lg font-medium mb-2">
+          <label htmlFor="message" className="text-lg font-medium mb-2 text-pink-500">
             Message
           </label>
           <textarea
@@ -58,7 +58,7 @@ const Contact = () => {
         </div>
         <button
           type="submit"
-          className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600"
+          className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600"
         >
           Submit
         </button>
