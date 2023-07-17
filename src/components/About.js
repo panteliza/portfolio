@@ -34,7 +34,7 @@ export default function About() {
               <div className="text-[15px] font-semibold text-gray-700">Online 24/7</div>
             </div>
           </div>
-          <div className="w-[600px] mt-[20px]">Hi there ! I'm a passionate frontend developer with 2 years of experience in crafting beautiful and interactive web experiences.  I have a strong background in HTML, CSS, and JavaScript, and I'm always eager to stay up-to-date with the latest web technologies and design trends.My skill set extends beyond the basics. I am proficient in using popular frontend frameworks such as React and Angular, enabling me to build scalable and efficient applications. I also have experience with version control systems like Git, which helps me maintain code quality and collaborate effectively with other developers.</div>
+          <div className="w-[600px] mt-[20px]">Hi  ! I'm a passionate frontend developer with 2 years of experience in crafting beautiful and interactive web experiences.  I have a strong background in HTML, CSS, and JavaScript, and I'm always eager to stay up-to-date with the latest web technologies and design trends.My skill set extends beyond the basics. I am proficient in using popular frontend frameworks such as React and Angular, enabling me to build scalable and efficient applications. I also have experience with version control systems like Git, which helps me maintain code quality and collaborate effectively with other developers.</div>
           <div className=" mt-[3px]  "><button className='bg-slate-800 text-white
            px-[9px] py-[3px] flex gap-[3px] items-center rounded-md'>
           <div >
