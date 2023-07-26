@@ -10,7 +10,7 @@ import { CiPaperplane } from 'react-icons/ci';
 export default function Navbar() {
   return (
    
-    <div className="navbar fixed top-0 w-full mb-10  ">
+    <div className="navbar fixed top-0 w-full mb-10 z-[10] ">
       <div className="flex justify-between px-[100px] py-[10px] bg-[#212B36]">
         <div className="font-semibold text-white flex text-[30px]">
           <div className='text-pink-500 '>E</div>

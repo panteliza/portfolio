@@ -29,12 +29,12 @@ const Resume = () => {
      <div className="text-gray-500">My personal journey</div>
 
      <div className='flex gap-10 mt-[30px]  '>
-     <div className={`flex gap-2  justify-center items-center cursor-default ${isEducationClicked ? 'text-pink-500' : 'inherit'} `}   onClick={handleEducationClick}>
+     <div className={`flex gap-2  justify-center items-center cursor-pointer ${isEducationClicked ? 'text-pink-500' : 'inherit'} `}   onClick={handleEducationClick}>
         <FaGraduationCap className='text-[25px]'/>
         <div className='text-[20px] font-semibold' 
       >Education</div>
       </div>
-      <div className={`flex gap-2  justify-center items-center cursor-default ${isExperienceClicked ? 'text-pink-500' : 'inherit'} `}  onClick={handleExperienceClick}>
+      <div className={`flex gap-2  justify-center items-center cursor-pointer ${isExperienceClicked ? 'text-pink-500' : 'inherit'} `}  onClick={handleExperienceClick}>
         <BiBriefcaseAlt2 className='text-[25px]'/>
         <div className='text-[20px] font-semibold '
        >Experience</div>
