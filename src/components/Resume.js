@@ -24,7 +24,7 @@ const Resume = () => {
 
   return (
     <div className='flex flex-col items-center
-    justify-center pt-[70px]' id='resume'>
+    justify-center pt-[70px] pb-[20px] ' id='resume'>
      <div className="font-bold text-gray-800 text-[40px]  ">Qualification</div>
      <div className="text-gray-500">My personal journey</div>
 
