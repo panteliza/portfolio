@@ -14,7 +14,7 @@ export default function Projects() {
             />
             <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-r from-violet-500 to-fuchsia-500 opacity-50 rounded-xl group-hover:opacity-0 transition-opacity duration-300'></div>
             <div className=''>
-              <div className='rounded-3xl bg-green-500 text-black font-semibold cursor-default top-5 absolute right-2 px-3 py-2 hover:bg-black hover:text-green-500 text-[14px]'>
+              <div className='rounded-3xl bg-green-500 text-black font-semibold cursor-pointer top-5 absolute right-2 px-3 py-2 hover:bg-black hover:text-green-500 text-[14px]'>
                 Online Gaming
               </div>
               <div className='text-white font-semibold bottom-10 absolute left-5 text-2xl pr-8'>
@@ -31,8 +31,8 @@ export default function Projects() {
             />
             <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-r from-violet-500 to-fuchsia-500 opacity-50 rounded-xl group-hover:opacity-0 transition-opacity duration-300'></div>
             <div className=''>
-              <div className='rounded-3xl bg-green-500 text-black font-semibold cursor-default top-5 absolute right-2 px-3 py-2 hover:bg-black hover:text-green-500 text-[14px]'>
-                Explore
+              <div className='rounded-3xl bg-green-500 text-black font-semibold cursor-pointer top-5 absolute right-2 px-3 py-2 hover:bg-black hover:text-green-500 text-[14px]'>
+                Entertainment
               </div>
               <div className='text-white font-semibold bottom-10 absolute left-5 text-2xl pr-8'>
               Music changes the world, music for everybody
@@ -47,7 +47,7 @@ export default function Projects() {
             />
             <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-r from-violet-500 to-fuchsia-500 opacity-50 rounded-xl group-hover:opacity-0 transition-opacity duration-300'></div>
             <div className=''>
-              <div className='rounded-3xl bg-green-500 text-black font-semibold cursor-default top-5 absolute right-2 px-3 py-2 hover:bg-black hover:text-green-500 text-[14px]'>
+              <div className='rounded-3xl bg-green-500 text-black font-semibold  top-5 absolute right-2 px-3 py-2 cursor-pointer hover:bg-black hover:text-green-500 text-[14px]'>
                 Explore
               </div>
               <div className='text-white font-semibold bottom-10 absolute left-5 text-2xl pr-8'>
@@ -63,7 +63,7 @@ export default function Projects() {
             />
             <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-r from-violet-500 to-fuchsia-500 opacity-0 rounded-xl group-hover:opacity-100 transition-opacity duration-300'></div>
             <div className=''>
-              <div className='rounded-3xl bg-green-500 text-black font-semibold cursor-default top-5 absolute right-2 px-3 py-2 hover:bg-black hover:text-green-500 text-[14px]'>
+              <div className='rounded-3xl bg-green-500 text-black font-semibold  top-5 absolute right-2 px-3 py-2 hover:bg-black hover:text-green-500 text-[14px] cursor-pointer'>
                 Artificial Intelligence
               </div>
               <div className='text-white font-semibold bottom-10 absolute left-5 text-2xl pr-8'>
@@ -79,7 +79,7 @@ export default function Projects() {
             />
             <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-r from-violet-500 to-fuchsia-500 opacity-50 rounded-xl group-hover:opacity-0 transition-opacity duration-300'></div>
             <div className=''>
-              <div className='rounded-3xl bg-green-500 text-black font-semibold cursor-default top-5 right-2 px-3 py-2 hover:bg-black hover:text-green-500 text-[14px] absolute'>
+              <div className='rounded-3xl bg-green-500 text-black font-semibold  top-5 right-2 px-3 py-2 hover:bg-black hover:text-green-500 text-[14px] absolute cursor-pointer'>
                 Fitness
               </div>
               <div className='text-white font-semibold bottom-10 absolute left-5 text-2xl pr-8'>
@@ -96,7 +96,7 @@ export default function Projects() {
             />
             <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-r from-violet-500 to-fuchsia-500 opacity-40 rounded-xl group-hover:opacity-0 transition-opacity duration-300'></div>
             <div>
-              <div className='rounded-3xl bg-green-500 text-black font-semibold cursor-default top-5 absolute right-2 px-3 py-2 hover:bg-black hover:text-green-500 text-[14px]'>
+              <div className='rounded-3xl bg-green-500 text-black font-semibold cursor-pointer top-5 absolute right-2 px-3 py-2 hover:bg-black hover:text-green-500 text-[14px]'>
                 Travelling
               </div>
               <div className='text-white font-semibold bottom-10 absolute left-5 text-2xl pr-8'>
