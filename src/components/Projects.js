@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 export default function Projects() {
   return (
     <div className='flex flex-col gap-2 justify-center items-center pt-[70px] pb-[20px]' id='projects'>
@@ -25,6 +26,7 @@ export default function Projects() {
 
           
           <div className='w-[420px] h-[280px] rounded-xl relative group'>
+           
           <img
               src="https://media.istockphoto.com/id/1145166058/photo/retro-old-microphone-vintage-style-with-neon-lights.webp?b=1&s=170667a&w=0&k=20&c=9dfmza0BqYIHatlP5lhoMP1v8X6kvFdqLBDeactXikM="
               className='w-[420px] h-[280px] rounded-xl border border-pink-500'
@@ -38,6 +40,7 @@ export default function Projects() {
               Music changes the world, music for everybody
               </div>
             </div>
+          
           </div>
 
           <div className='w-[420px] h-[280px] rounded-xl relative group'>
