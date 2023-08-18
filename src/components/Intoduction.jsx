@@ -9,20 +9,17 @@ import Blog from './Blog';
 const Introduction = () => {
   return (
     <Router>
-      <div className='flex min-h-screen'>
+      <div className='md:flex-row md:min-h-screen sm:flex sm:flex-col  '>
         <Sidebar />
 
-        <div className='w-3/4 p-4 flex flex-col flex-grow relative'>
+        <div className='md:w-3/4 p-4 flex flex-col flex-grow '>
           <Routes>
             <Route path='/' element={<About />} />
             <Route path='/work' element={<Work />} />
             <Route path='/portfolio' element={<Portfolio />} />
             <Route path='/blog' element={<Blog />} />
           </Routes>
-          <div className='bg-gray-200 flex justify-center items-center absolute bottom-0 left-0 right-0 h-6 text-gray-500'>
-          <p>&copy; 2023 Eliza Pant. All Rights Reserved</p>
-
-          </div>
+         
         </div>
       </div>
     </Router>

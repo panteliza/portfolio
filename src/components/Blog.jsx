@@ -9,9 +9,12 @@ const Blog = ({ title, content }) => {
           <h2 className="text-xl font-semibold mb-2">{title}</h2>
           <p className="text-gray-700">{content}</p>
         </div>
-        <button className="mt-4 bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-gray-500">
+        <a
+          href="https://www.example.com/single-blog" // Replace with the actual blog link
+          className="mt-4 bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-gray-500"
+        >
           View More
-        </button>
+        </a>
       </div>
     </div>
   );
@@ -45,8 +48,13 @@ const App = () => {
         ))}
       </div>
       <div className='flex gap-2 text-gray-600 items-center'>
-        View all
-        <AiOutlineDoubleRight/>
+        <a
+          href="https://www.example.com/all-blogs" // Replace with the actual "View All" link
+          className="flex gap-2 text-gray-600 items-center"
+        >
+          View all
+          <AiOutlineDoubleRight/>
+        </a>
       </div>
     </div>
   );

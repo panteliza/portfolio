@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import elu from '../assets/IMG_6234.jpg';
+import { Link } from 'react-router-dom';
 import { AiOutlineHome, AiOutlineDoubleRight } from 'react-icons/ai';
 
 const About = () => {
   const [currentAction, setCurrentAction] = useState(0);
-  const actions = ['design', 'develop', 'deploy'];
+  const actions = ['design', 'develop','debug', 'deploy'];
   const gradients = [
     'from-indigo-500 via-purple-500 to-pink-500',
     'from-green-500 via-teal-500 to-cyan-500',
+    'from-pink-400 via-pink-500 to-pink-600',
     'from-yellow-500 via-orange-500 to-red-500'
   ];
 
@@ -30,12 +32,14 @@ const About = () => {
             </span>{' '}
             websites.
           </div>
-          <div className="text-gray-700 lg:text-[20px] md:text-[12px]">
+          <div className="text-gray-700 lg:text-[20px] md:text-[12px] sm:text-[10px]">
             A dynamic software engineer by day, a visionary artist by night; my code doesn't just function, it dances – a testament to my unyielding passion, unwavering talent, and audacious spirit in shaping the digital world.
           </div>
+          <Link to='/work'>
           <div className='text-gray-600 flex items-center gap-2 mt-3 lg:text-[18px] md:text-[10px]'>
             View Featured Projects <AiOutlineDoubleRight/>
           </div>
+          </Link>
         </div>
         <div className='w-1/3'>
           <img src={elu} className='2xl:w-[350px] 2xl:h-[400px] rounded-full' alt='Elu' />

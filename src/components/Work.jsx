@@ -97,9 +97,13 @@ const Work = () => {
             />
           ))}
         </div>
-          <div className='flex gap-2 items-center text-center'>View more
-        <AiOutlineDoubleRight/>
-      </div>
+        <a
+          href="https://www.example.com/projects" // Replace with the actual "View All" link
+          className="flex gap-2 text-gray-600 items-center"
+        >
+          View more
+          <AiOutlineDoubleRight/>
+        </a>
       </div>
       </div>
     </div>
