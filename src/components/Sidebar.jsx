@@ -109,7 +109,7 @@ const Sidebar = () => {
       )}
 
       {show && (
-        <div className="md:hidden h-[80px]  flex sm:px-[30px] pl-[15px] pr-[18px] bg-gray-200 justify-between">
+        <div className="md:hidden h-[90px]  flex sm:px-[30px] pl-[15px] pr-[18px] bg-gray-200 justify-between pb-10">
           <div className='flex gap-2 items-center h-[50px] '>
             <img
               src={pp}
@@ -129,8 +129,8 @@ const Sidebar = () => {
 
 
 
-          <div className='sm:flex-row flex flex-col  sm:text-[18px] text-[12px] sm:gap-[30px] gap-[10px]  pt-3'>
-            <div className='flex text-gray-600 sm:gap-[30px] gap-[40px] '>
+          <div className='sm:flex-row flex flex-col  sm:text-[18px] text-[12px] sm:gap-[30px] gap-[10px]  pt-3 '>
+            <div className='flex text-gray-600 sm:gap-[30px] gap-[40px]  '>
               <Link to='/'>
                 <div className='flex flex-col items-center sm:gap-1'>
                   <AiOutlineHome />

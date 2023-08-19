@@ -21,7 +21,7 @@ const Introduction = () => {
           </Routes>
          
         
-          <footer className='text-center py-3 absolute bottom-0   w-full'>
+          <footer className='text-center py-3 absolute bottom-0  w-full'>
               <p>&copy; {new Date().getFullYear()} Eliza Pant. All Rights Reserved.</p>
             </footer>
        
