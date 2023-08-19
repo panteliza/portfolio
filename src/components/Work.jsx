@@ -63,7 +63,7 @@ const Work = () => {
     <div className="min-h-screen bg-gray-100 py-16">
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center">
-          <h1 className="text-3xl font-semibold mb-2 text-gray-600">Showcasing advanced projects and skills</h1>
+          <h1 className="xl:text-3xl md:text-[30px] sm:text-[25px] font-semibold mb-2 text-gray-600">Showcasing advanced projects and skills</h1>
          
           <div className="mt-6 flex justify-center">
             <a
@@ -84,8 +84,8 @@ const Work = () => {
             </a>
           </div>
         </div>
-        <div className='flex flex-col gap-7 '>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className='flex flex-col gap-7  '>
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Project
               key={index}

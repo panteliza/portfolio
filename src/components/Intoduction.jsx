@@ -9,10 +9,10 @@ import Blog from './Blog';
 const Introduction = () => {
   return (
     <Router>
-      <div className='md:flex-row md:min-h-screen sm:flex sm:flex-col  '>
+      <div className='md:flex-row md:min-h-screen sm:flex sm:flex-col'>
         <Sidebar />
 
-        <div className='md:w-3/4 p-4 flex flex-col flex-grow '>
+        <div className='md:w-3/4 p-4 flex flex-col flex-grow relative'>
           <Routes>
             <Route path='/' element={<About />} />
             <Route path='/work' element={<Work />} />
@@ -20,6 +20,11 @@ const Introduction = () => {
             <Route path='/blog' element={<Blog />} />
           </Routes>
          
+        
+          <footer className='text-center py-3 absolute bottom-0 bg-gray-200  w-full'>
+              <p>&copy; {new Date().getFullYear()} Eliza Pant. All Rights Reserved.</p>
+            </footer>
+       
         </div>
       </div>
     </Router>

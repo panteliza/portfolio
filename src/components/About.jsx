@@ -22,17 +22,17 @@ const About = () => {
 
   return (
     <div className='h-screen' id='about'>
-      <div className='flex gap-10 px-[40px] py-[60px] items-center'>
-        <div className='flex flex-col gap-2 w-2/3'>
-          <div className='font-bold lg:text-[30px] text-gray-700'>Hi there, I am Eliza.</div>
-          <div className='font-bold lg:text-[30px] text-gray-700'>
+      <div className='sm:flex-row flex flex-col sm:gap-10 gap-4 sm:px-[40px] px-[25px] md:py-[60px] sm:py-[30px] items-center justify-center '>
+        <div className='hidden sm:flex flex-col gap-2 w-2/3 '>
+          <div className='font-bold xl:text-[30px] 2xl:text-[40px] lg:text-[24px] md:text-[16px] text-gray-700'>Hi there, I am Eliza.</div>
+          <div className='font-bold xl:text-[30px] 2xl:text-[40px] lg:text-[24px] md:text-[16px] text-gray-700'>
             I like to{' '}
             <span className={`bg-clip-text text-transparent bg-gradient-to-r ${gradients[currentAction]}`}>
               {actions[currentAction]}
             </span>{' '}
             websites.
           </div>
-          <div className="text-gray-700 lg:text-[20px] md:text-[12px] sm:text-[10px]">
+          <div className="text-gray-700 lg:text-[16px] 2xl:text-[28px] xl:text-[20px] md:text-[12px] sm:text-[10px] text-justify">
             A dynamic software engineer by day, a visionary artist by night; my code doesn't just function, it dances – a testament to my unyielding passion, unwavering talent, and audacious spirit in shaping the digital world.
           </div>
           <Link to='/work'>
@@ -41,9 +41,37 @@ const About = () => {
           </div>
           </Link>
         </div>
-        <div className='w-1/3'>
-          <img src={elu} className='2xl:w-[350px] 2xl:h-[400px] rounded-full' alt='Elu' />
+
+
+
+        <div className='sm:w-1/3  w-[180px] p-3  '>
+          <img src={elu} className='2xl:w-[350px] 2xl:h-[400px]
+           rounded-full' alt='Elu' />
         </div>
+        
+       
+        <div className='sm:hidden flex flex-col gap-1   justify-center '>
+          <div className='font-bold  text-gray-700'>Hi there, I am Eliza.</div>
+          <div className='font-bold ] text-gray-700'>
+            I like to{' '}
+            <span className={`bg-clip-text text-transparent bg-gradient-to-r ${gradients[currentAction]}`}>
+              {actions[currentAction]}
+            </span>{' '}
+            websites.
+          </div>
+          <div className="text-gray-700 text-[11px]  ">
+            A dynamic software engineer by day, a visionary artist by night; my code doesn't just function, it dances – a testament to my unyielding passion, unwavering talent, and audacious spirit in shaping the digital world.
+          </div>
+          <Link to='/work'>
+          <div className='text-gray-600 flex items-center gap-2 mt-3 text-[12px]'>
+            View Featured Projects <AiOutlineDoubleRight/>
+          </div>
+          </Link>
+        </div>
+       
+
+
+
       </div>
     </div>
   );

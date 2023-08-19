@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { AiOutlineHome, AiOutlineDoubleRight } from 'react-icons/ai';
+import { AiOutlineHome, AiOutlineClose } from 'react-icons/ai';
 import { MdWorkOutline } from 'react-icons/md';
 import { BsCodeSquare, BsLinkedin, BsGrid } from 'react-icons/bs';
 import { ImBlogger } from 'react-icons/im';
@@ -109,7 +109,7 @@ const Sidebar = () => {
       )}
 
       {show && (
-        <div className="md:hidden h-[80px]  flex sm:px-[30px] pl-[15px] pr-[10px] justify-between">
+        <div className="md:hidden h-[80px]  flex sm:px-[30px] pl-[15px] pr-[18px] bg-gray-200 justify-between">
           <div className='flex gap-2 items-center h-[50px] '>
             <img
               src={pp}
@@ -129,8 +129,8 @@ const Sidebar = () => {
 
 
 
-          <div className='sm:flex-row flex flex-col  sm:text-[18px] text-[12px] sm:gap-[30px] gap-[10px] bg-pink-500 pt-3'>
-            <div className='flex text-gray-600 sm:gap-[30px] gap-[40px] bg-red-600'>
+          <div className='sm:flex-row flex flex-col  sm:text-[18px] text-[12px] sm:gap-[30px] gap-[10px]  pt-3'>
+            <div className='flex text-gray-600 sm:gap-[30px] gap-[40px] '>
               <Link to='/'>
                 <div className='flex flex-col items-center sm:gap-1'>
                   <AiOutlineHome />
@@ -145,13 +145,15 @@ const Sidebar = () => {
               </Link>
               
               <div className='sm:hidden  font-bold text-gray-500   flex items-center '>
-                <IoIosCloseCircle className='sm:text-[20px]' onClick={showIt} />
+                <AiOutlineClose className='sm:text-[22px]' onClick={showIt} />
               </div>
             </div>
-            <div className='flex text-gray-600 sm:gap-[30px] gap-[40px] bg-purple-600 '>
+            <div className='flex text-gray-600 sm:gap-[30px] gap-[30px]  '>
             <Link to='/portfolio'>
-            <div className='flex flex-col items-center  sm:gap-1'>
-              <BsCodeSquare />
+            <div className='flex flex-col items-center  sm:gap-1 '>
+              <div className=' pr-4'>
+              <BsCodeSquare className='' />
+              </div>
               Portfolio
             </div>
           </Link>
@@ -162,8 +164,9 @@ const Sidebar = () => {
             </div>
           </Link>
             </div>
-            <div className='hidden sm:block font-bold text-gray-500 sm:flex items-center'>
-                <IoIosCloseCircle className='sm:text-[20px]' onClick={showIt} />
+            <div className='hidden sm:block font-bold text-gray-500 sm:flex 
+             '>
+                <AiOutlineClose className='sm:text-[22px]' onClick={showIt} />
               </div>
           </div>
 
