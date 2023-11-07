@@ -30,7 +30,7 @@ const About = () => {
             <span className={`bg-clip-text text-transparent bg-gradient-to-r ${gradients[currentAction]}`}>
               {actions[currentAction]}
             </span>{' '}
-            websites.
+            webapps.
           </div>
           <div className="text-gray-700 lg:text-[16px] 2xl:text-[28px] xl:text-[20px] md:text-[12px] sm:text-[10px] text-justify">
             A dynamic software engineer by day, a visionary artist by night; my code doesn't just function, it dances – a testament to my unyielding passion, unwavering talent, and audacious spirit in shaping the digital world.

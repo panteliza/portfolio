@@ -53,12 +53,7 @@ const Sidebar = () => {
               Portfolio
             </div>
           </Link>
-          <Link to='/blog'>
-            <div className='flex items-center gap-3'>
-              <ImBlogger />
-              Blog
-            </div>
-          </Link>
+          
         </div>
         <div className='flex flex-col gap-2'>
           <div className='font-semibold text-gray-500 md:text-[15px] lg:text-[18px] md:pl-[40px] xl:pl-[60px] 2xl:text-[30px] 2xl:pl-[70px] '>
@@ -70,7 +65,7 @@ const Sidebar = () => {
                 <BsInstagram />
                 Instagram
               </a>
-              <a href="https://www.example.com/cv.pdf" className="flex items-center gap-3">
+              <a href="" className="flex items-center gap-3">
                 <CgFileDocument />
                 Read CV
               </a>

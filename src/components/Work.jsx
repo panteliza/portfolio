@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import {AiOutlineDoubleRight} from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+
 
 const Project = ({ title, description, imageUrl, demoUrl, codeUrl }) => {
   return (
@@ -36,25 +38,25 @@ const Project = ({ title, description, imageUrl, demoUrl, codeUrl }) => {
 const Work = () => {
   const projects = [
     {
-      title: 'Machine Learning Model for Image Recognition',
-      description: 'Implemented a convolutional neural network for image classification with state-of-the-art accuracy.',
-      imageUrl: 'https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      demoUrl: 'https://example.com/ml-demo',
-      codeUrl: 'https://github.com/user/ml-project',
+      title: 'Seamless Shopping Redefined: Trendify - Where Every Click Unveils a New Trend',
+      description: 'Explore our dynamic React-based e-shopping platform powered by the cutting-edge Fakestore API.',
+      imageUrl: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      demoUrl: 'https://trendify-phi.vercel.app/',
+      codeUrl: 'https://github.com/panteliza/Trendify',
     },
     {
-      title: 'Decentralized Application with Smart Contracts',
-      description: 'Developed a decentralized app using blockchain technology and smart contracts for secure transactions.',
-      imageUrl: 'https://plus.unsplash.com/premium_photo-1682310068925-2135e638d58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=912&q=80',
-      demoUrl: 'https://example.com/blockchain-demo',
-      codeUrl: 'https://github.com/user/blockchain-project',
+      title: 'Chat App MERN',
+      description: 'user-friendly, versatile, and secure messaging application that allows individuals and groups to communicate effectively and efficiently. ',
+      imageUrl: 'https://images.unsplash.com/photo-1577563908411-5077b6dc7624?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      demoUrl: 'https://chatapp-murex-gamma.vercel.app/',
+      codeUrl: 'https://github.com/panteliza/chatapp',
     },
     {
-      title: 'Real-time Data Analytics Dashboard',
+      title: 'Elanta Health Care And Hygiene Products',
       description: 'Built a data visualization dashboard using real-time data streams and interactive charts.',
-      imageUrl: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      demoUrl: 'https://example.com/dashboard-demo',
-      codeUrl: 'https://github.com/user/dashboard-project',
+      imageUrl: 'https://www.elantahealthcareandhygiene.com.np/static/media/IMG-4762.84834cb671a4d94bff1b.jpg',
+      demoUrl: 'https://www.elantahealthcareandhygiene.com.np/',
+      codeUrl: 'https://github.com/panteliza/elanta',
     },
     // Add more projects
   ];
@@ -97,13 +99,15 @@ const Work = () => {
             />
           ))}
         </div>
-        <a
-          href="https://www.example.com/projects" // Replace with the actual "View All" link
+        <Link to='/projects'>
+        <p
+          // Replace with the actual "View All" link
           className="flex gap-2 text-gray-600 items-center"
         >
           View more
           <AiOutlineDoubleRight/>
-        </a>
+        </p>
+        </Link>
       </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import Sidebar from './Sidebar';
 import About from './About';
 import Work from './Work';
 import Portfolio from './Portfolio';
-import Blog from './Blog';
+
 
 const Introduction = () => {
   return (
@@ -17,7 +17,9 @@ const Introduction = () => {
             <Route path='/' element={<About />} />
             <Route path='/work' element={<Work />} />
             <Route path='/portfolio' element={<Portfolio />} />
-            <Route path='/blog' element={<Blog />} />
+            
+     
+         
           </Routes>
          
         
