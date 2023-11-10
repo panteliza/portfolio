@@ -65,15 +65,15 @@ const Sidebar = () => {
                 <BsInstagram />
                 Instagram
               </a>
-              <a href="" className="flex items-center gap-3">
+              <a href="https://www.instagram.com/elizapant/?hl=en" className="flex items-center gap-3">
                 <CgFileDocument />
                 Read CV
               </a>
-              <a href="https://github.com/" className="flex items-center gap-3">
+              <a href="https://github.com/panteliza" className="flex items-center gap-3">
                 <BsGithub />
                 Github
               </a>
-              <a href="https://www.linkedin.com/" className="flex items-center gap-3">
+              <a href="https://www.linkedin.com/in/eliza-pant-98969b23a/" className="flex items-center gap-3">
                 <BsLinkedin />
                 LinkedIn
               </a>
