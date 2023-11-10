@@ -37,9 +37,8 @@ const Portfolio = () => {
 
   const experience = [
     { company: 'Intelzy.', role: 'Frontend Developer', year: '2023-present' },
-    { company: 'Tech Solutions Inc.', role: 'Frontend Developer', year: '2019 - 2022' },
-    { company: 'Digital Innovators', role: 'Junior Web Developer', year: '2017 - 2019' },
-    // Add more experience items
+    { company: 'Tech Solutions Inc.', role: 'Junior Frontend Developer', year: '2021 - 2022' },
+
   ];
 
   const technologies = ['HTML', 'CSS', 'JavaScript', 'ReactJS','NextJS','SQL', 'TailWind CSS','Responsive Design','MongoDB' ,'NodeJs','Git','Restful APIs','NodeJs','TypeScript'];
