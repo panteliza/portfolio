@@ -119,7 +119,7 @@ import React from 'react'
 
 const Work = () => {
   return (
-    <div className='flex items-center justify-center bg-slate-500'>Page Under Construction!!!</div>
+    <div className='flex items-center justify-center bg-slate-500'>Page Under Construction!!!!!</div>
   )
 }
 
