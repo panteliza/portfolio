@@ -1,10 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import About from './About';
 import Work from './Work';
 import Portfolio from './Portfolio';
-
 
 const Introduction = () => {
   return (
@@ -17,16 +16,11 @@ const Introduction = () => {
             <Route path='/' element={<About />} />
             <Route path='/work' element={<Work />} />
             <Route path='/portfolio' element={<Portfolio />} />
-            
-     
-         
           </Routes>
-         
-        
+          
           <footer className='text-center py-3 absolute bottom-0  w-full'>
-              <p>&copy; {new Date().getFullYear()} Eliza Pant. All Rights Reserved.</p>
-            </footer>
-       
+            <p>&copy; {new Date().getFullYear()} Eliza Pant. All Rights Reserved.</p>
+          </footer>
         </div>
       </div>
     </Router>
