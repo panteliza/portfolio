@@ -27,7 +27,7 @@ const projects = [
   },
   {
     title: 'Elanta ',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita',
+    description: 'Health and hygiene products website, React, Tailwind',
     imageUrl: health,
     codeLink: 'https://github.com/panteliza/elanta',
     demoLink: 'https://www.elantahealthcareandhygiene.com.np/',
