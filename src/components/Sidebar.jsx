@@ -94,7 +94,7 @@ const Sidebar = () => {
               <div className='font-semibold sm:text-[15px] text-[12px] text-gray-700'>
                 Eliza Pant
               </div>
-              <div className='sm:text-[12px] text-[9px]'>Frontend Developer</div>
+              <div className='sm:text-[12px] text-[9px]'>Software Developer</div>
             </div>
           </div>
           <div className='sm:text-[25px] text-[20px] text-gray-500  flex items-center'>
@@ -115,7 +115,7 @@ const Sidebar = () => {
               <div className='font-semibold sm:text-[15px] text-[12px] text-gray-700'>
                 Eliza Pant
               </div>
-              <div className='sm:text-[12px] text-[9px]'>Frontend Developer</div>
+              <div className='sm:text-[12px] text-[9px]'>Software Developer</div>
             </div>
           </div>
 

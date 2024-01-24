@@ -53,14 +53,14 @@ const About = () => {
         <div className='sm:hidden flex flex-col gap-1   justify-center '>
           <div className='font-bold  text-gray-700'>Hi there, I am Eliza.</div>
           <div className='font-bold ] text-gray-700'>
-            I like to{' '}
+      
             <span className={`bg-clip-text text-transparent bg-gradient-to-r ${gradients[currentAction]}`}>
               {actions[currentAction]}
             </span>{' '}
-            webapps.
+        
           </div>
           <div className="text-gray-700 text-[11px]  ">
-            A dynamic software engineer by day, a visionary artist by night; my code doesn't just function, it dances – a testament to my unyielding passion, unwavering talent, and audacious spirit in shaping the digital world.
+          As a professional software engineer, I specialize in developing dynamic web applications. Beyond my technical expertise, I am also a visionary artist, with a passion for transforming ideas into robust and efficient solutions. Outside the world of coding, you'll find me continuously exploring new technologies, staying in step with emerging trends, and contributing to the ever-evolving landscape of software development. Let's collaborate to build the next generation of digital experiences.
           </div>
           <Link to='/work'>
           <div className='text-gray-600 flex items-center gap-2 mt-3 text-[12px]' >
