@@ -44,7 +44,7 @@ const projects = [
     description: 'A Full-Stack Website with Next.js 13, Typescript, Prisma, Cloudinary, Tailwind',
     imageUrl: news,
     codeLink: 'https://github.com/panteliza/technews',
-    demoLink: '',
+    demoLink: 'https://github.com/panteliza/technews',
   },
   // {
   //   title: 'Netflix Clone ',
