@@ -3,7 +3,7 @@ import React from 'react';
 const EducationItem = ({ school, degree, year }) => {
   return (
     <div className="mb-4">
-      <h3 className="text-lg font-semibold">{school}</h3>
+      <h3 className="text-lg font-semibold text-gray-700">{school}</h3>
       <p className="text-gray-600">{degree}</p>
       <p className="text-gray-400">{year}</p>
     </div>
@@ -44,10 +44,10 @@ const Portfolio = () => {
   const technologies = ['HTML', 'CSS', 'JavaScript', 'ReactJS','NextJS','SQL', 'TailWind CSS','Responsive Design','MongoDB' ,'NodeJs','Git','Restful APIs','NodeJs','TypeScript'];
 
   return (
-    <div className="bg-gray-100 py-16">
-      <div className="max-w-5xl mx-auto px-4">
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
+    <div className="bg-gray-100 py-16 ">
+      <div className=" mx-auto px-4 ">
+        <div className="mt-10 flex flex-col md:flex-row gap-10 ">
+          <div className=''>
             <h3 className="text-xl font-semibold mb-4">Education</h3>
             {education.map((item, index) => (
               <EducationItem key={index} {...item} />

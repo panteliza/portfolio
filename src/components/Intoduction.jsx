@@ -8,17 +8,17 @@ import Portfolio from './Portfolio';
 const Introduction = () => {
   return (
     <Router>
-      <div className='md:flex-row md:min-h-screen sm:flex sm:flex-col'>
+      <div className='md:flex-row md:min-h-screen sm:flex sm:flex-col overflow-hidden'>
         <Sidebar />
 
-        <div className='md:w-3/4 p-4 flex flex-col flex-grow relative'>
+        <div className='md:w-3/4 p-4 flex flex-col flex-grow relative overflow-hidden'>
           <Routes>
             <Route path='/' element={<About />} />
             <Route path='/work' element={<Work />} />
             <Route path='/portfolio' element={<Portfolio />} />
           </Routes>
           
-          <footer className='text-center py-3 absolute bottom-0  w-full'>
+          <footer className=' py-3  bottom-0 w-full text-start text-gray-500'>
             <p>&copy; {new Date().getFullYear()} Eliza Pant. All Rights Reserved.</p>
           </footer>
         </div>

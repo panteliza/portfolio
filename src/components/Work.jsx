@@ -1,126 +1,167 @@
-// import React from 'react';
-// import { FaGithub, FaLinkedin } from 'react-icons/fa';
-// import {AiOutlineDoubleRight} from 'react-icons/ai';
-// import { Link } from 'react-router-dom';
+import React,{useState} from 'react';
+import { AiOutlineDoubleRight } from 'react-icons/ai';
+import abc from '../assets/refine.png'
+import ai from '../assets/ai-saas.png'
+import health from '../assets/elanta.png'
+import flair from '../assets/trendify.png'
+import news from '../assets/technews.png'
+
+import { Link } from 'react-router-dom';
 
 
-// const Project = ({ title, description, imageUrl, demoUrl, codeUrl }) => {
-//   return (
-//     <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-//       <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
-//       <div className="p-4">
-//         <h2 className="text-xl font-semibold mb-2">{title}</h2>
-//         <p className="text-gray-700">{description}</p>
-//         <div className="mt-4">
-//           <a
-//             href={demoUrl}
-//             className="text-blue-500 hover:underline"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             Demo
-//           </a>
-//           <span className="mx-2 text-gray-400">|</span>
-//           <a
-//             href={codeUrl}
-//             className="text-blue-500 hover:underline"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             Code
-//           </a>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
 
-// const Work = () => {
-//   const projects = [
-//     {
-//       title: 'Seamless Shopping Redefined: Trendify - Where Every Click Unveils a New Trend',
-//       description: 'Explore our dynamic React-based e-shopping platform powered by the cutting-edge Fakestore API.',
-//       imageUrl: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-//       demoUrl: 'https://trendify-phi.vercel.app/',
-//       codeUrl: 'https://github.com/panteliza/Trendify',
-//     },
-//     {
-//       title: 'Chat App MERN',
-//       description: 'user-friendly, versatile, and secure messaging application that allows individuals and groups to communicate effectively and efficiently. ',
-//       imageUrl: 'https://images.unsplash.com/photo-1577563908411-5077b6dc7624?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-//       demoUrl: 'https://chatapp-murex-gamma.vercel.app/',
-//       codeUrl: 'https://github.com/panteliza/chatapp',
-//     },
-//     {
-//       title: 'Elanta Health Care And Hygiene Products',
-//       description: 'Built a data visualization dashboard using real-time data streams and interactive charts.',
-//       imageUrl: 'https://www.elantahealthcareandhygiene.com.np/static/media/IMG-4762.84834cb671a4d94bff1b.jpg',
-//       demoUrl: 'https://www.elantahealthcareandhygiene.com.np/',
-//       codeUrl: 'https://github.com/panteliza/elanta',
-//     },
-//     // Add more projects
-//   ];
+const projects = [
+  {
+    title: 'React Admin Dashboard',
+    description: 'Full authentication,  homepage displaying charts and activities, acomprehensive table for companies with CRUD and search, and a Kanban board with real-time synchronization using Refine Framework.',
+    imageUrl: abc,
+    codeLink: 'https://github.com/panteliza/sour-beds-visit',
+    demoLink: 'https://sour-beds-visit.vercel.app/',
+  },
+  {
+    title: 'AI-SaaS',
+    description: ' SaaS application,a rich palette of web development technologies like React, Tailwind, Prisma, MySQL, Clerk, and more.',
+    imageUrl: ai,
+    codeLink: 'https://github.com/panteliza/ai-saas',
+    demoLink: 'https://ai-saas-one-lac.vercel.app/',
+  },
+  {
+    title: 'Elanta ',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita',
+    imageUrl: health,
+    codeLink: 'https://github.com/panteliza/elanta',
+    demoLink: 'https://www.elantahealthcareandhygiene.com.np/',
+  },
+  {
+    title: 'Trendify ',
+    description: 'An Ecommerce Website With React JS, Tailwind CSS and Fake Store API',
+    imageUrl: flair,
+    codeLink: 'https://github.com/panteliza/elle-flair',
+    demoLink: 'https://trendify-phi.vercel.app/',
+  },
+  {
+    title: 'Tech-news ',
+    description: 'A Full-Stack Website with Next.js 13, Typescript, Prisma, Cloudinary, Tailwind',
+    imageUrl: news,
+    codeLink: 'https://github.com/panteliza/technews',
+    demoLink: '',
+  },
+  // {
+  //   title: 'Netflix Clone ',
+  //   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita',
+  //   imageUrl: flair,
+  //   codeLink: 'https://github.com/panteliza/Netflix-clone-',
+  //   demoLink: 'https://panteliza.github.io/Netflix-clone-/',
+  // },
+];
 
-//   return (
-//     <div className="min-h-screen bg-gray-100 py-16">
-//       <div className="max-w-5xl mx-auto px-4">
-//         <div className="text-center">
-//           <h1 className="xl:text-3xl md:text-[30px] sm:text-[25px] font-semibold mb-2 text-gray-600">Showcasing advanced projects and skills</h1>
-         
-//           <div className="mt-6 flex justify-center">
-//             <a
-//               href="https://github.com"
-//               className="text-gray-600 hover:text-gray-800 mx-2"
-//               target="_blank"
-//               rel="noopener noreferrer"
-//             >
-//               <FaGithub size={24} />
-//             </a>
-//             <a
-//               href="https://www.linkedin.com"
-//               className="text-gray-600 hover:text-gray-800 mx-2"
-//               target="_blank"
-//               rel="noopener noreferrer"
-//             >
-//               <FaLinkedin size={24} />
-//             </a>
-//           </div>
-//         </div>
-//         <div className='flex flex-col gap-7  '>
-//         <div className="mt-12 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8">
-//           {projects.map((project, index) => (
-//             <Project
-//               key={index}
-//               title={project.title}
-//               description={project.description}
-//               imageUrl={project.imageUrl}
-//               demoUrl={project.demoUrl}
-//               codeUrl={project.codeUrl}
-//             />
-//           ))}
-//         </div>
-//         <Link to='/projects'>
-//         <p
-//           // Replace with the actual "View All" link
-//           className="flex gap-2 text-gray-600 items-center"
-//         >
-//           View more
-//           <AiOutlineDoubleRight/>
-//         </p>
-//         </Link>
-//       </div>
-//       </div>
-//     </div>
-//   );
-// };
+const Project = ({ title, description, imageUrl, codeLink, demoLink }) => (
+  <div className="gap-5 sm:flex">
+    <img src={imageUrl} alt={title} className="w-[250px] object-cover" />
+    <div className="flex flex-col gap-1 pt-3">
+      <div className="text-lg font-semibold">{title}</div>
+      <p className="max-w-[300px]">{description}</p>
+      <div className="flex gap-2">
+        {codeLink && (
+          <a
+            href={codeLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-md border text-gray-600 border-gray-400 px-1 py-1 font-medium cursor-pointer"
+          >
+            View Code
+          </a>
+        )}
+        {demoLink && (
+          <a
+            href={demoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-md border text-gray-600 border-gray-400 px-1 py-1 font-medium cursor-pointer"
+          >
+            Demo
+          </a>
+        )}
+      </div>
+    </div>
+  </div>
+);
 
-// export default Work;
-import React from 'react'
+
+
 
 const Work = () => {
-  return (
-    <div className='flex items-center justify-center bg-slate-500'>Page Under Construction!!!!!</div>
-  )
-}
 
-export default Work
+  const [show,setShow]=useState(false)
+  const viewMore=()=>{
+    setShow (true)
+  }
+  const viewLess=()=>{
+    setShow (false)
+  }
+
+  return (
+    <div className="min-h-screen py-16">
+      <div className="max-w-[550px]">
+        <div className="text-start">
+          <h1 className="xl:text-3xl md:text-[30px] sm:text-[25px] font-semibold text-gray-600 mb-6">
+            Featured Projects
+          </h1>
+        </div>
+        <hr />
+        <div className="flex flex-col gap-7 mt-10">
+          {projects.map((project, index) => (
+            <Project key={index} {...project} />
+          ))}
+          {!show && (
+          <div  className="flex gap-2 text-gray-600 items-center cursor-pointer" value={show} onClick={viewMore}>
+            View more <AiOutlineDoubleRight />
+          </div>
+          )}
+
+         {show && (
+          <div className=''>
+            <ul>
+               <Link to="https://github.com/panteliza/hotelya">
+              <li className='text-gray-500 text-lg font-semibold py-2'>Hotelya</li>
+              </Link>
+              <hr/>
+              <Link to="https://github.com/panteliza/Netflix-clone-">
+              <li className='text-gray-500 text-lg font-semibold py-2'>Netflix Clone</li>
+              </Link>
+              <hr/>
+              <Link to="https://github.com/panteliza/mern-auth-">
+              <li className='text-gray-500 text-lg font-semibold py-2'>Mern Auth</li>
+              </Link>
+              <hr/>
+              <Link to="https://github.com/TheOneAbove0/blogging">
+              <li className='text-gray-500 text-lg font-semibold py-2'> Blogging</li>
+              </Link>
+              <hr/>
+              <Link to="https://github.com/panteliza/chatapp">
+              <li className='text-gray-500 text-lg font-semibold py-2'> Chat App</li>
+              </Link>
+              <Link to="https://panteliza.github.io/Foodista/">
+              <li className='text-gray-500 text-lg font-semibold py-2'> Foodista</li>
+              </Link>
+              
+              
+             
+              
+             
+              <div  className="flex gap-2 text-gray-600 items-center cursor-pointer mt-4" value={show} onClick={viewLess} >
+            View less <AiOutlineDoubleRight />
+          </div>
+
+             
+            </ul>
+          </div>
+         )
+          }
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Work;
