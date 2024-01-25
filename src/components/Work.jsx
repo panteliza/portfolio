@@ -130,7 +130,7 @@ const Work = () => {
               <li className='text-gray-500 text-lg font-semibold py-2'>Netflix Clone</li>
               </Link>
               <hr/>
-              <Link to="https://github.com/panteliza/mern-auth-">
+              <Link to="https://github.com/panteliza/mern-auth">
               <li className='text-gray-500 text-lg font-semibold py-2'>Mern Auth</li>
               </Link>
               <hr/>
