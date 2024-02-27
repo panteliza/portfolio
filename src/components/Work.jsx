@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import { AiOutlineDoubleRight } from 'react-icons/ai';
 import abc from '../assets/refine.png'
-import ai from '../assets/ai-saas.png'
+import home from '../assets/home.png'
 import health from '../assets/elanta.png'
 import flair from '../assets/trendify.png'
 import news from '../assets/technews.png'
@@ -12,18 +12,18 @@ import { Link } from 'react-router-dom';
 
 const projects = [
   {
+    title: 'AI-SaaS',
+    description: 'A comprehensive Software-as-a-Service application, equipped with advanced AI functionalities and a secure payment and credit system, developed using Next.js 14, Cloudinary AI technology, Clerk for authentication, and Stripe for payment processing.',
+    imageUrl: home,
+    codeLink: 'https://github.com/panteliza/intellifusion',
+    demoLink: 'https://intellifusion.vercel.app/',
+  },
+  {
     title: 'React Admin Dashboard',
     description: 'Full authentication,  homepage displaying charts and activities, acomprehensive table for companies with CRUD and search, and a Kanban board with real-time synchronization using Refine Framework.',
     imageUrl: abc,
     codeLink: 'https://github.com/panteliza/sour-beds-visit',
     demoLink: 'https://sour-beds-visit.vercel.app/',
-  },
-  {
-    title: 'AI-SaaS',
-    description: ' SaaS application,a rich palette of web development technologies like React, Tailwind, Prisma, MySQL, Clerk, and more.',
-    imageUrl: ai,
-    codeLink: 'https://github.com/panteliza/ai-saas',
-    demoLink: 'https://ai-saas-one-lac.vercel.app/',
   },
   {
     title: 'Elanta ',

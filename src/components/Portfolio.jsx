@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const EducationItem = ({ school, degree, year }) => {
   return (
@@ -66,6 +67,12 @@ const Portfolio = () => {
             {technologies.map((technology, index) => (
               <TechnologyItem key={index} technology={technology} />
             ))}
+          </div>
+        </div>
+        <div className="mt-10 pr-[40px]">
+          <h3 className="text-xl font-semibold mb-4">Certifications</h3>
+          <div className="flex flex-wrap ">
+        <Link to={"https://www.udemy.com/certificate/UC-e4412945-81c0-48fa-b611-c7c35c363ad7/"}>The Complete 2024 Web Development BootCamp- UDEMY</Link>
           </div>
         </div>
       </div>
