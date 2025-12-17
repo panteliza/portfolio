@@ -1,79 +1,202 @@
-import React, { useState, useEffect } from 'react';
-import elu from '../assets/IMG_6234.jpg';
-import { Link } from 'react-router-dom';
-import { AiOutlineHome, AiOutlineDoubleRight } from 'react-icons/ai';
+import React, { useEffect, useMemo, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import elu from "../assets/IMG_6234.jpg";
+import { Sparkles, ArrowRight, Globe, Shield, Code2, Wand2 } from "lucide-react";
 
 const About = () => {
-  const [currentAction, setCurrentAction] = useState(0);
-  const actions = ['Passionate Problem Solver', 'Continuous Learner and Innovator','Effective Collaborator and Communicator'];
-  const gradients = [
-    'from-indigo-500 via-purple-500 to-pink-500',
-    'from-green-500 via-teal-500 to-cyan-500',
-    'from-pink-400 via-pink-500 to-pink-600',
-    'from-yellow-500 via-orange-500 to-red-500'
-  ];
+  const roles = useMemo(
+    () => [
+      "CEO @ Navo360 • IT & Digital Innovation",
+      "Software Engineer • Web & Product Engineering",
+      "Creative Technologist • Design + Motion + Code",
+    
+    ],
+    []
+  );
 
+  const [i, setI] = useState(0);
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentAction((prevAction) => (prevAction + 1) % actions.length);
-    }, 2000); // Change this interval according to your preference
-    return () => clearInterval(interval);
+    const t = setInterval(() => setI((p) => (p + 1) % roles.length), 2800);
+    return () => clearInterval(t);
+  }, [roles.length]);
+
+  // Reveal on scroll
+  const ref = useRef(null);
+  const [seen, setSeen] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const io = new IntersectionObserver(
+      ([e]) => e.isIntersecting && (setSeen(true), io.disconnect()),
+      { threshold: 0.2 }
+    );
+    io.observe(el);
+    return () => io.disconnect();
   }, []);
 
   return (
-    <div className='h-screen mb-5' id='about'>
-      <div className='sm:flex-row flex flex-col sm:gap-10 gap-4 sm:px-[40px] px-[25px] md:py-[60px] sm:py-[30px] items-center   '>
-        <div className='hidden sm:flex flex-col gap-2 '>
-          <div className='font-bold xl:text-[30px] 2xl:text-[40px] lg:text-[24px] md:text-[16px] text-gray-700'>Hi there, I am Eliza.</div>
-          <div className='font-bold xl:text-[30px] 2xl:text-[40px] lg:text-[24px] md:text-[16px] text-gray-700'>
-            
-            <span className={`bg-clip-text text-transparent bg-gradient-to-r ${gradients[currentAction]}`}>
-              {actions[currentAction]}
-            </span>{' '}
-           
-          </div>
-          <div className="text-gray-700 lg:text-[10px] 2xl:text-[20px] xl:text-[15px] md:text-[15px] sm:text-[10px] text-justify max-w-[700px]">
-          As a professional software engineer, I specialize in developing dynamic web applications. Beyond my technical expertise, I am also a visionary artist, with a passion for transforming ideas into robust and efficient solutions. Outside the world of coding, you'll find me continuously exploring new technologies, staying in step with emerging trends, and contributing to the ever-evolving landscape of software development. Let's collaborate to build the next generation of digital experiences.
-          </div>
-          <Link to='/work'>
-          <div className='text-gray-600 flex items-center gap-2 mt-3 lg:text-[18px] md:text-[10px]'>
-            View Featured Projects <AiOutlineDoubleRight/>
-          </div>
-          </Link>
-        </div>
-
-
-
-        <div className='sm:w-1/3  w-[180px] p-3   '>
-          <img src={elu} className='2xl:w-[350px] 2xl:h-[400px]
-           rounded-full' alt='Elu' />
-        </div>
-        
-       
-        <div className='sm:hidden flex flex-col gap-1   justify-center '>
-          <div className='font-bold  text-gray-700'>Hi there, I am Eliza.</div>
-          <div className='font-bold ] text-gray-700'>
-      
-            <span className={`bg-clip-text text-transparent bg-gradient-to-r ${gradients[currentAction]}`}>
-              {actions[currentAction]}
-            </span>{' '}
-        
-          </div>
-          <div className="text-gray-700 text-[11px]  ">
-          As a professional software engineer, I specialize in developing dynamic web applications. Beyond my technical expertise, I am also a visionary artist, with a passion for transforming ideas into robust and efficient solutions. Outside the world of coding, you'll find me continuously exploring new technologies, staying in step with emerging trends, and contributing to the ever-evolving landscape of software development. Let's collaborate to build the next generation of digital experiences.
-          </div>
-          <Link to='/work'>
-          <div className='text-gray-600 flex items-center gap-2 mt-3 text-[12px]' >
-            View Featured Projects <AiOutlineDoubleRight/>
-          </div>
-          </Link>
-        </div>
-       
-
-
-
+    <section
+      id="about"
+      className="relative overflow-hidden py-16 sm:py-20"
+      aria-label="About section"
+    >
+      {/* Background: Aurora + grain + grid */}
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute inset-0 bg-[#070A12]" />
+        <div className="absolute -top-44 -left-44 h-[520px] w-[520px] rounded-full bg-gradient-to-br from-violet-500/35 via-fuchsia-500/25 to-cyan-500/25 blur-3xl animate-[float_10s_ease-in-out_infinite]" />
+        <div className="absolute -bottom-48 -right-48 h-[560px] w-[560px] rounded-full bg-gradient-to-br from-emerald-500/20 via-sky-500/20 to-indigo-500/25 blur-3xl animate-[float_12s_ease-in-out_infinite]" />
+        <div className="absolute inset-0 opacity-[0.08] [background-image:radial-gradient(#ffffff_1px,transparent_1px)] [background-size:26px_26px]" />
+        <div className="absolute inset-0 opacity-[0.05] [background-image:linear-gradient(to_right,#ffffff1a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff1a_1px,transparent_1px)] [background-size:56px_56px]" />
+        <div className="absolute inset-0 mix-blend-soft-light opacity-[0.18] [background-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22900%22 height=%22900%22%3E%3Cfilter id=%22n%22 x=%220%22 y=%220%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.9%22 numOctaves=%224%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22900%22 height=%22900%22 filter=%22url(%23n)%22 opacity=%220.35%22/%3E%3C/svg%3E')]" />
       </div>
-    </div>
+
+      <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
+        {/* Header badge */}
+        <div className="mb-8 flex items-center gap-3">
+          <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.06] px-4 py-2 text-xs font-medium text-white/80 backdrop-blur">
+            <Sparkles size={16} className="text-white/80" />
+            Navo360 • Nepal • Portfolio
+          </div>
+        </div>
+
+        <div
+          ref={ref}
+          className={`grid items-center gap-10 md:grid-cols-2 ${
+            seen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+          } transition-all duration-700 ease-out`}
+        >
+          {/* LEFT: Copy */}
+          <div className="space-y-6">
+            <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+              Building elegant tech with{" "}
+              <span className="bg-gradient-to-r from-fuchsia-300 via-violet-200 to-cyan-200 bg-clip-text text-transparent">
+                purpose
+              </span>
+              .
+            </h1>
+
+            {/* Role switch with “pop” animation */}
+            <div className="text-base sm:text-lg text-white/85">
+              <span className="text-white/50">I’m </span>
+              <span
+                key={i}
+                className="inline-block bg-gradient-to-r from-emerald-300 via-cyan-200 to-fuchsia-200 bg-clip-text text-transparent font-semibold"
+                style={{ animation: "pop .55s ease both" }}
+              >
+                {roles[i]}
+              </span>
+            </div>
+
+            <p className="max-w-xl text-sm leading-7 text-white/70 sm:text-base">
+              I lead <span className="text-white/90 font-semibold">Navo360</span> and build
+              high-quality web products that feel premium: clean UI, smooth motion,
+              and strong engineering underneath. My style blends creativity with
+              discipline — calm, focused, and always improving.
+            </p>
+
+            {/* Feature pills */}
+            <div className="flex flex-wrap gap-2">
+              {[
+                { icon: <Code2 size={16} />, label: "Modern Web Apps" },
+                { icon: <Wand2 size={16} />, label: "Motion & UI Polish" },
+                { icon: <Shield size={16} />, label: "Reliable Engineering" },
+                { icon: <Globe size={16} />, label: "Global-ready Delivery" }
+              ].map((x) => (
+                <span
+                  key={x.label}
+                  className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.06] px-3 py-2 text-xs font-medium text-white/80 backdrop-blur transition hover:bg-white/[0.10]"
+                >
+                  <span className="text-white/70">{x.icon}</span>
+                  {x.label}
+                </span>
+              ))}
+            </div>
+
+            {/* Buttons */}
+            <div className="flex flex-wrap items-center gap-3 pt-2">
+              <Link
+                to="/work"
+                className="group inline-flex items-center gap-2 rounded-2xl bg-white px-5 py-3 text-sm font-semibold text-[#070A12] transition hover:scale-[1.02] active:scale-[0.98]"
+              >
+                View Projects
+                <ArrowRight size={16} className="transition group-hover:translate-x-0.5" />
+              </Link>
+
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/[0.06] px-5 py-3 text-sm font-semibold text-white/90 backdrop-blur transition hover:bg-white/[0.10]"
+              >
+                Work with me
+                <ArrowRight size={16} className="opacity-80" />
+              </a>
+            </div>
+
+            {/* Stats row (subtle “topper vibe” without saying it) */}
+            <div className="mt-6 grid grid-cols-3 gap-3">
+              {[
+                { k: "Execution", v: "High standards" },
+                { k: "Taste", v: "Design-first" },
+                { k: "Focus", v: "Consistent output" }
+              ].map((s) => (
+                <div
+                  key={s.k}
+                  className="rounded-2xl border border-white/10 bg-white/[0.06] p-4 backdrop-blur"
+                >
+                  <div className="text-xs text-white/50">{s.k}</div>
+                  <div className="mt-1 text-sm font-semibold text-white/90">{s.v}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* RIGHT: Image card */}
+          <div className="relative">
+            {/* Glow */}
+            <div className="absolute -inset-4 rounded-[28px] bg-gradient-to-r from-fuchsia-500/20 via-indigo-500/20 to-cyan-500/20 blur-2xl animate-[pulseSoft_3s_ease-in-out_infinite]" />
+
+            <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.06] p-4 backdrop-blur">
+              <div className="relative overflow-hidden rounded-2xl">
+                <img
+                  src={elu}
+                  alt="Eliza"
+                  className="h-[360px] w-full object-cover transition duration-700 hover:scale-[1.05]"
+                />
+                {/* dark vignette */}
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#070A12]/70 via-transparent to-transparent" />
+              </div>
+
+              {/* Bottom content */}
+              <div className="mt-4 flex items-center justify-between">
+                <div>
+                  <div className="text-sm font-semibold text-white">Eliza Pant</div>
+                  <div className="text-xs text-white/55">CEO • Navo360 • Nepal</div>
+                </div>
+
+                <div className="rounded-full border border-white/10 bg-white/[0.06] px-3 py-2 text-xs text-white/80">
+                  “Build with intention.”
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Keyframes */}
+        <style>{`
+          @keyframes pop {
+            from { opacity: 0; transform: translateY(8px) scale(.98); filter: blur(6px); }
+            to { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+          }
+          @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(18px); }
+          }
+          @keyframes pulseSoft {
+            0%, 100% { opacity: .6; }
+            50% { opacity: 1; }
+          }
+        `}</style>
+      </div>
+    </section>
   );
 };
 
