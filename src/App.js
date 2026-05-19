@@ -1,14 +1,13 @@
-import React from 'react'
-import Intoduction from './components/Intoduction'
-import About from './components/About'
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import Introduction from "./components/Intoduction";
 
 const App = () => {
   return (
-    <div>
-<Intoduction/>
+    <BrowserRouter>
+      <Introduction />
+    </BrowserRouter>
+  );
+};
 
-    </div>
-  )
-}
-
-export default App
+export default App;
