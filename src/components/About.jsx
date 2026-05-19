@@ -1,10 +1,8 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import { Link } from "react-router-dom";
 import elu from "../assets/IMG_6234.jpg";
 
 import {
   Sparkles,
-  ArrowRight,
   Globe,
   Shield,
   Code2,
@@ -80,6 +78,7 @@ const About = () => {
 
         {/* Badge */}
         <div className="mb-8 flex items-center gap-3">
+
           <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.06] px-4 py-2 text-xs font-medium text-white/80 backdrop-blur">
 
             <Sparkles size={16} className="text-white/80" />
@@ -87,6 +86,7 @@ const About = () => {
             Nepal • Frontend Developer • Portfolio
 
           </div>
+
         </div>
 
         <div
@@ -102,11 +102,17 @@ const About = () => {
           <div className="space-y-6">
 
             <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl leading-tight">
+
               Creating modern digital experiences with{" "}
+
               <span className="bg-gradient-to-r from-fuchsia-300 via-violet-200 to-cyan-200 bg-clip-text text-transparent">
+
                 creativity & purpose
+
               </span>
+
               .
+
             </h1>
 
             {/* Animated Roles */}
@@ -137,8 +143,7 @@ const About = () => {
               <br />
 
               I have worked on projects for some of Nepal’s leading businesses
-              and organizations, 
-            manufacturers, construction
+              and organizations including manufacturers, construction
               companies, hotels, educational institutes, clinics, and healthcare
               platforms.
 
@@ -186,18 +191,17 @@ const About = () => {
                   key={x.label}
                   className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.06] px-3 py-2 text-xs font-medium text-white/80 backdrop-blur transition hover:bg-white/[0.10]"
                 >
+
                   <span className="text-white/70">
                     {x.icon}
                   </span>
 
                   {x.label}
+
                 </span>
               ))}
 
             </div>
-
-            {/* Buttons */}
-           
 
             {/* Stats */}
             <div className="mt-6 grid grid-cols-3 gap-3">
@@ -222,6 +226,7 @@ const About = () => {
                   key={s.k}
                   className="rounded-2xl border border-white/10 bg-white/[0.06] p-4 backdrop-blur"
                 >
+
                   <div className="text-xs text-white/50">
                     {s.k}
                   </div>
@@ -229,10 +234,12 @@ const About = () => {
                   <div className="mt-1 text-sm font-semibold text-white/90">
                     {s.v}
                   </div>
+
                 </div>
               ))}
 
             </div>
+
           </div>
 
           {/* RIGHT IMAGE */}
@@ -257,6 +264,7 @@ const About = () => {
               <div className="mt-4 flex items-center justify-between">
 
                 <div>
+
                   <div className="text-sm font-semibold text-white">
                     Eliza Pant
                   </div>
@@ -264,6 +272,7 @@ const About = () => {
                   <div className="text-xs text-white/55">
                     Frontend Web Developer • Nepal
                   </div>
+
                 </div>
 
                 <div className="rounded-full border border-white/10 bg-white/[0.06] px-3 py-2 text-xs text-white/80">
@@ -271,8 +280,11 @@ const About = () => {
                 </div>
 
               </div>
+
             </div>
+
           </div>
+
         </div>
 
         {/* Animation */}

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { AiOutlineHome, AiOutlineClose } from "react-icons/ai";
-import { MdWorkOutline } from "react-icons/md";
+
 
 import {
   BsLinkedin,
